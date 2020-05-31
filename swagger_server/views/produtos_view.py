@@ -13,3 +13,15 @@ def listar_produtos(black_friday=None):
         return lista_de_produtos
     except:
         raise
+
+
+def listar_produto_por_id(id_produto):
+    try:
+
+        query = tb_produto.get(tb_produto.id == id_produto)
+
+        produto = query.get()
+
+        return json.loads(produto.json_data)
+    except:
+        raise
