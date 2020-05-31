@@ -1,4 +1,4 @@
-db = {"Produtos": {
+table_produtos_rows = {"Produtos": {
     85197: {
         "brinde": None,
         "oferta": None,
