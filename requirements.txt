@@ -7,5 +7,4 @@ connexion==1.5.3
 setuptools >= 21.0.0
 
 # DB requirements
-sqlite3
 peewee==3.13.3
