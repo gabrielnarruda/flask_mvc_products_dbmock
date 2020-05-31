@@ -1,3 +1,6 @@
+from swagger_server.configuration.data_mock import data
+
+
 def get_listar_produto_por_id(id_produto):  # noqa: E501
     """Retorna produto por ID
 
@@ -21,4 +24,4 @@ def get_listar_produtos(black_friday=None):  # noqa: E501
 
     :rtype: ProdutoVO
     """
-    return 'do some magic!'
+    return data.db
