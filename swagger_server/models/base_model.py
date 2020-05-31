@@ -1,7 +1,5 @@
 import peewee
-from swagger_server import db_conn
-
-
+from swagger_server.__main__ import db_conn
 
 db = peewee.SqliteDatabase(db_conn)
 

@@ -40,7 +40,7 @@ paths:
       - "produtos"
       summary: "Retorna lista de produtos completa"
       description: "Retorna lista de produtos completa"
-      operationId: "get_listar_produtos"
+      operationId: "get_lista_produtos"
       produces:
       - "application/json"
       parameters:
@@ -67,7 +67,7 @@ paths:
       - "produtos"
       summary: "Retorna produto por ID"
       description: "Retorna produto por ID"
-      operationId: "get_listar_produto_por_id"
+      operationId: "get_produto_por_id"
       produces:
       - "application/json"
       parameters:

@@ -1,8 +1,18 @@
 import sqlite3
 import json
+#from swagger_server import logger
 from swagger_server.configuration.data_mock.data import table_produtos_rows
+from swagger_server.__main__ import db_conn
+import os
 
-db_conn = './db_produtos.db'
+
+
+def delete_table_mock():
+    if os.path.exists("db_produtos.db"):
+        os.remove("db_produtos.db")
+#        logger.info("Mock deletado com sucesso")
+    else:
+        print("O Mock não existe")
 
 
 def create_table_mock():
@@ -21,7 +31,7 @@ def create_table_mock():
 
 def insert_table_data_mock():
     try:
-        sqlite_connection = sqlite3.connect('db_produtos.db')
+        sqlite_connection = sqlite3.connect(db_conn)
         cursor = sqlite_connection.cursor()
 
         for register in table_produtos_rows.get("Produtos"):

@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 import connexion
+from swagger_server.configuration.logger import create_logger
 
+db_conn = './db_produtos.db'
 
 
 def main():
