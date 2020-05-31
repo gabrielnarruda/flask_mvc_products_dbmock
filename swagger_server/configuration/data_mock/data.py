@@ -412,7 +412,7 @@ table_produtos_rows = {"Produtos": {
         "link_descricao": "/produto/79936/mem-ria-hyperx-fury-8gb-2400mhz-ddr4-cl15-preto-hx424c15fb2-8",
         "origem": None,
         "origem_nome": None,
-        "flag_blackfriday": 0,
+        "flag_blackfriday": 1,
         "sucesso": True
     }, 87400: {
         "brinde": None,

@@ -1,19 +1,15 @@
 from swagger_server.models.produtos_model import tb_produto
 import json
 
+from swagger_server.views.produtos_view_utils import query_filter_lista_de_produtos
+
 
 def listar_produtos(black_friday=None):
-    lista_de_produtos = []
-    if black_friday:
-        pass
-    else:
+    try:
+
         query = tb_produto.select()
 
-    for row in query:
-        json_data = json.loads(row.json_data)
-        produto = {
-            row.id: json_data
-        }
-        lista_de_produtos.append(produto)
-
-    return lista_de_produtos
+        lista_de_produtos = query_filter_lista_de_produtos(query, black_friday)
+        return lista_de_produtos
+    except:
+        raise
