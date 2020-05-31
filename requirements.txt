@@ -6,3 +6,5 @@ werkzeug==0.16.0
 connexion==1.5.3
 python-dateutil==2.7.3
 setuptools >= 21.0.0
+sqlite3
+peewee==3.13.3
