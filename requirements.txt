@@ -2,7 +2,7 @@
 
 flask
 # API requirements
-werkzeug==0.16.0
+werkzeug==2.2.3
 connexion==1.5.3
 setuptools >= 21.0.0
 
